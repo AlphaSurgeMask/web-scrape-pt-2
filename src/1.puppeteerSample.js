@@ -1,11 +1,11 @@
-const puppeteer = require('puppeteer');
+import { launch } from 'puppeteer';
 
 (async () => {
-  const browser = await puppeteer.launch({
+  const browser = await launch({
     headless: true,  // Run in headless mode
     args: [
       '--no-sandbox',  // Necessary for containerized environments like Codespaces
-      '--disable-setuid-sandbox'  // Additional sandbox-related option
+      '--disable-setuid-sandbox',  // Additional sandbox-related option
     ]
   });
 

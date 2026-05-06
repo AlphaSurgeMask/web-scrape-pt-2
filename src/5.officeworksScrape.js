@@ -41,7 +41,7 @@ function saveData(location, data) {
 }
 
 async function multiPageScraping() {
-  await sleep(2 * 60000, 5 * 60000, 4);
+  await sleep(2 * 60000, 7 * 60000, 4);
 
   const browser = await launch({
     headless: true,
@@ -122,7 +122,7 @@ async function specificationsScraping() {
         page,
     );
 
-    await sleep(2 * 60000, 5 * 60000, 4);
+    await sleep(2 * 60000, 7 * 60000, 4);
 
     const browser = await launch({
       headless: true,
